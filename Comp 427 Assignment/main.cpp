@@ -60,13 +60,13 @@ public:
 int main()
 {
     // 1. Create at least 2 BankAccount objects [cite: 36]
-    BankAccount account1(101, "Sidney", 5000.0);
-    BankAccount account2(102, "Lewis", 3000.0);
+    BankAccount account1(101, "Sidney", 150000.0);
+    BankAccount account2(102, "Lewis", 120000.0);
 
     // 2. Perform transactions on account1
     account1.displayAccount();
-    account1.deposit(1000.0);   // One deposit [cite: 38]
-    account1.withdraw(2000.0);  // One withdrawal [cite: 40]
+    account1.deposit(33000.0);   // One deposit [cite: 38]
+    account1.withdraw(25000.0);  // One withdrawal [cite: 40]
 
     // 3. Display updated information [cite: 41]
     cout << "Updated ";
