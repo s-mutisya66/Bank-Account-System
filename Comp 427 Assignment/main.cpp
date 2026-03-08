@@ -60,8 +60,8 @@ public:
 int main()
 {
     // 1. Create at least 2 BankAccount objects [cite: 36]
-    BankAccount account1(101, "John", 5000.0);
-    BankAccount account2(102, "Jane", 3000.0);
+    BankAccount account1(101, "Sidney", 5000.0);
+    BankAccount account2(102, "Lewis", 3000.0);
 
     // 2. Perform transactions on account1
     account1.displayAccount();
