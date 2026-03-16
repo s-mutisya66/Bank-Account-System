@@ -3,34 +3,34 @@
 
 using namespace std;
 
-// PART A: Class Design [cite: 10, 11]
+// PART A: Class Design
 class BankAccount
 {
 private:
-    // Making data members private [cite: 12, 13]
-    int accountNumber;      // [cite: 14]
-    string accountHolder;   // [cite: 15]
-    double balance;         // [cite: 16]
+    // Making data members private
+    int accountNumber;
+    string accountHolder;
+    double balance;
 
 public:
-    // PART B: Constructor [cite: 17, 18]
+    // PART B: Constructor
     BankAccount(int accNo, string name, double initialBalance)
     {
-        accountNumber = accNo;      // [cite: 19]
-        accountHolder = name;       // [cite: 20]
-        balance = initialBalance;    // [cite: 23]
+        accountNumber = accNo;
+        accountHolder = name;
+        balance = initialBalance;
     }
 
-    // PART C: Member Functions [cite: 24, 25]
+    // PART C: Member Functions
 
-    // 1. deposit method [cite: 26]
+    // 1. deposit method
     void deposit(double amount)
     {
-        balance += amount; // Adds amount to balance [cite: 27]
-        cout << "Deposit: " << amount << endl; // [cite: 45]
+        balance += amount; // Adds amount to balance
+        cout << "Deposit: " << amount << endl;
     }
 
-    // 2. withdraw method [cite: 28]
+    // 2. withdraw method
     void withdraw(double amount)
     {
         // Prevent withdrawal if insufficient funds 
@@ -40,35 +40,35 @@ public:
         }
         else
         {
-            balance -= amount; // Subtracts amount from balance [cite: 29]
+            balance -= amount; // Subtracts amount from balance
             cout << "Withdrawal: " << amount << endl; // 
         }
     }
 
-    // 3. displayAccount method [cite: 31]
+    // 3. displayAccount method
     void displayAccount()
     {
-        // Displays account details [cite: 33]
-        cout << "Account Number: " << accountNumber << endl; // [cite: 43]
-        cout << "Account Holder: " << accountHolder << endl; // [cite: 43]
-        cout << "Balance: " << balance << endl;              // [cite: 44]
+        // Displays account details
+        cout << "Account Number: " << accountNumber << endl;
+        cout << "Account Holder: " << accountHolder << endl;
+        cout << "Balance: " << balance << endl;              //
         cout << "----------------------" << endl;
     }
 };
 
-// PART D: Main Function [cite: 34, 35]
+// PART D: Main Function
 int main()
 {
-    // 1. Create at least 2 BankAccount objects [cite: 36]
+    // 1. Create at least 2 BankAccount objects
     BankAccount account1(101, "Sidney", 150000.0);
     BankAccount account2(102, "Lewis", 120000.0);
 
     // 2. Perform transactions on account1
     account1.displayAccount();
-    account1.deposit(33000.0);   // One deposit [cite: 38]
-    account1.withdraw(25000.0);  // One withdrawal [cite: 40]
+    account1.deposit(33000.0);   // One deposit
+    account1.withdraw(25000.0);  // One withdrawal
 
-    // 3. Display updated information [cite: 41]
+    // 3. Display updated information
     cout << "Updated ";
     account1.displayAccount();
 
